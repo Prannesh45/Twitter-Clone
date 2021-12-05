@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Twitter Clone - Prans</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/style.css">
+        <!--link rel="stylesheet" href="https://lineicons.com/wp-content/cache/min/1/75e28b1040722821f0930b8124397d19.css" media="all" data-minify="1"-->
+        <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg="nest"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+        <!--script src="https://lineicons.com/icons/"></script-->
+    </head>
+    <body>
+        <div class="home_page">
+            <div class="side_navigation">
+                <div class="navigation-logos">
+                    <div class="twitter-logo">
+                        <i class="fab fa-twitter-square" style="color:rgb(85, 40, 250);"></i>
+                    </div>
+                    <div class="home-logo">
+                        <i class="fas fa-home"></i>
+                        <a>Home</a>
+                    </div>
+                    <div class="explore-logo">
+                        <i class="fas fa-hashtag"></i>
+                        <a>Explore</a>
+                    </div>
+                    <div class="notifications-logo">
+                        <i class="fas fa-bell"></i>
+                        <a>Notifications</a>
+                    </div>
+                    <div class="messages-logo">
+                        <i class="fas fa-envelope-square"></i>
+                        <a>Messages</a>
+                    </div>
+                    <div class="bookmarks-logo">
+                        <i class="far fa-bookmark"></i>
+                        <a>Bookmarks</a>
+                    </div>
+                    <div class="lists-logo">
+                        <i class="far fa-list-alt"></i>
+                        <a>Lists</a>
+                    </div>
+                    <div class="profiles-logo">
+                        <i class="far fa-user"></i>
+                        <a>Profile</a>
+                    </div>
+
+                    <div class="tweet-side" id="tweet-side-id"">
+                        <a>Tweet</a>
+                    </div>
+
+                    <!-- <div class="profiles">
+                        <div class="profile-logo">
+                            <img src="https://pbs.twimg.com/profile_images/1358081441792286721/E0HAO4xo_400x400.jpg" >
+                        </div>
+                        <h2>Prannesh</h2>
+                    </div> -->
+
+                    <div class="username-logo">
+                        <i><img src="https://pbs.twimg.com/profile_images/1358081441792286721/E0HAO4xo_400x400.jpg" align="center" class="my-image"></i>
+                        <ul class="username-name">
+                            <li>Prannesh</li>
+                            <li>@prannesh_45</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                
+                    <!-- <div class="profile-logo">
+                        <img src="https://pbs.twimg.com/profile_images/1358081441792286721/E0HAO4xo_400x400.jpg" align="center" class="my-image">
+                    </div> -->
+                
+            </div>
+            <div class="main" >
+                <div class="section1-search">
+                    <i class="fas fa-search fa-flip-horizontal" onclick="getTwData()"></i>
+                        <input id="search-input" type="text" placeholder="Search Twitter" onkeyup="enter_on(event)"/>   
+                </div>
+                <div class="tweets-all">
+                    <div class="main_message">
+                        <h3>Welcome to Twitter!</h3>
+                        <h5>This is the best place to see what’s happening in your world. Find some topics and use the Search to know the trend</h5>
+                        <h5></h5>
+                    </div>
+                </div>
+                <div class="page-2" id="page-2-id" onclick="on_new_page()">
+                    <i class="fas fa-arrow-down"></i>
+                </div>
+            </div>
+            <div class="right_sidebar">
+                <div class="tags-sidebar">
+                    <div class="trending">
+                        <h4>What's happening</h4>
+                        <ul>
+                            <li onclick="trendnow(this)">#virat</li>
+                            <li onclick="trendnow(this)">#manchesterisred</li>
+                            <!-- <a>Trending with Bruno Fernandes</a> -->
+                            <li onclick="trendnow(this)">#growthhacker</li>
+                            <li onclick="trendnow(this)">#fullstackdeveloper</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="style/js/style.js" async defer></script>
+    </body>
+</html>
